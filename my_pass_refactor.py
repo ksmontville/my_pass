@@ -49,7 +49,8 @@ def find_password():
             messagebox.showinfo(title='Login Information',
                                 message=f'Website: {website}\nPassword: {data[website]["password"]}')
         else:
-            messagebox.showinfo(title="Login Information", message="Website not found in user data file.")
+            messagebox.showinfo(title="Login Information",
+                                message=f"Website named '{website}' not found in user data file.")
 
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
